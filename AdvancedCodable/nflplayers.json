@@ -1,0 +1,68 @@
+{
+    "nflplayers": [
+        {
+            "firstName": "Mitch",
+            "lastName": "Morse",
+            "team": "Buffalo Bills",
+            "age": "27",
+            "yearsNFL": "4",
+        },
+        {
+            "firstName": "Chase",
+            "lastName": "Daniel",
+            "team": "Chicago Bears",
+            "age": "32",
+            "yearsNFL": "10",
+        },
+        {
+            "firstName": "Sheldon",
+            "lastName": "Richardson",
+            "team": "Cleveland Browns",
+            "age": "28",
+            "yearsNFL": "7",
+        },
+        {
+            "firstName": "Drew",
+            "lastName": "Lock",
+            "team": "Denver Broncos",
+            "age": "22",
+            "yearsNFL": "1",
+        },
+        {
+            "firstName": "Charles",
+            "lastName": "Harris",
+            "team": "Miami Dolphins",
+            "age": "24",
+            "yearsNFL": "3",
+        },
+        {
+            "firstName": "Beau",
+            "lastName": "Brinkley",
+            "team": "Tennessee Titans",
+            "age": "29",
+            "yearsNFL": "8",
+        },
+        {
+            "firstName": "Emanuel",
+            "lastName": "Hall",
+            "team": "Tampa Bay Buccaneers",
+            "age": "22",
+            "yearsNFL": "1",
+        },
+        {
+            "firstName": "Terez",
+            "lastName": "Hall",
+            "team": "New England Patriots",
+            "age": "22",
+            "yearsNFL": "1",
+        },
+        {
+            "firstName": "Justin",
+            "lastName": "Britt",
+            "team": "Seattle Seahawks",
+            "age": "28",
+            "yearsNFL": "6",
+        }
+    ]
+}
+

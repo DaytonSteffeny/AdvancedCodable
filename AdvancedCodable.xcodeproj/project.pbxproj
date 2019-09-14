@@ -14,6 +14,13 @@
 		5E392467232C736700939B60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E392465232C736700939B60 /* LaunchScreen.storyboard */; };
 		5E392472232C736700939B60 /* AdvancedCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E392471232C736700939B60 /* AdvancedCodableTests.swift */; };
 		5E39247D232C736800939B60 /* AdvancedCodableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39247C232C736800939B60 /* AdvancedCodableUITests.swift */; };
+		5E39248B232C7B0C00939B60 /* JSONLoads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39248A232C7B0C00939B60 /* JSONLoads.swift */; };
+		5E39248D232C7B6E00939B60 /* NFLplayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39248C232C7B6E00939B60 /* NFLplayers.swift */; };
+		5E39248F232C7B7800939B60 /* Rosters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39248E232C7B7800939B60 /* Rosters.swift */; };
+		5E392491232C7B8400939B60 /* Schedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E392490232C7B8400939B60 /* Schedules.swift */; };
+		5E392493232C7C3900939B60 /* nflplayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E392492232C7C3900939B60 /* nflplayers.json */; };
+		5E392495232C7C4D00939B60 /* rosters.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E392494232C7C4D00939B60 /* rosters.json */; };
+		5E392497232C7C6100939B60 /* schedules.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E392496232C7C6100939B60 /* schedules.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		5E392478232C736700939B60 /* AdvancedCodableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvancedCodableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E39247C232C736800939B60 /* AdvancedCodableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCodableUITests.swift; sourceTree = "<group>"; };
 		5E39247E232C736800939B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E39248A232C7B0C00939B60 /* JSONLoads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoads.swift; sourceTree = "<group>"; };
+		5E39248C232C7B6E00939B60 /* NFLplayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLplayers.swift; sourceTree = "<group>"; };
+		5E39248E232C7B7800939B60 /* Rosters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rosters.swift; sourceTree = "<group>"; };
+		5E392490232C7B8400939B60 /* Schedules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedules.swift; sourceTree = "<group>"; };
+		5E392492232C7C3900939B60 /* nflplayers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nflplayers.json; sourceTree = "<group>"; };
+		5E392494232C7C4D00939B60 /* rosters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rosters.json; sourceTree = "<group>"; };
+		5E392496232C7C6100939B60 /* schedules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schedules.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +111,15 @@
 		5E39245B232C736600939B60 /* AdvancedCodable */ = {
 			isa = PBXGroup;
 			children = (
-				5E39245C232C736600939B60 /* AppDelegate.swift */,
 				5E39245E232C736600939B60 /* ViewController.swift */,
+				5E392494232C7C4D00939B60 /* rosters.json */,
+				5E39248E232C7B7800939B60 /* Rosters.swift */,
+				5E392496232C7C6100939B60 /* schedules.json */,
+				5E392490232C7B8400939B60 /* Schedules.swift */,
+				5E392492232C7C3900939B60 /* nflplayers.json */,
+				5E39248C232C7B6E00939B60 /* NFLplayers.swift */,
+				5E39248A232C7B0C00939B60 /* JSONLoads.swift */,
+				5E39245C232C736600939B60 /* AppDelegate.swift */,
 				5E392460232C736600939B60 /* Main.storyboard */,
 				5E392463232C736700939B60 /* Assets.xcassets */,
 				5E392465232C736700939B60 /* LaunchScreen.storyboard */,
@@ -229,8 +250,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E392493232C7C3900939B60 /* nflplayers.json in Resources */,
 				5E392467232C736700939B60 /* LaunchScreen.storyboard in Resources */,
+				5E392497232C7C6100939B60 /* schedules.json in Resources */,
 				5E392464232C736700939B60 /* Assets.xcassets in Resources */,
+				5E392495232C7C4D00939B60 /* rosters.json in Resources */,
 				5E392462232C736600939B60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E392491232C7B8400939B60 /* Schedules.swift in Sources */,
+				5E39248D232C7B6E00939B60 /* NFLplayers.swift in Sources */,
+				5E39248B232C7B0C00939B60 /* JSONLoads.swift in Sources */,
+				5E39248F232C7B7800939B60 /* Rosters.swift in Sources */,
 				5E39245F232C736600939B60 /* ViewController.swift in Sources */,
 				5E39245D232C736600939B60 /* AppDelegate.swift in Sources */,
 			);

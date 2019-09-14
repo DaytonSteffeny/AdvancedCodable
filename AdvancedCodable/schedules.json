@@ -1,0 +1,77 @@
+{
+    "schedules": [
+        {
+            "team": "Wyoming",
+            "date": "2/5/2019"
+            "time": "6:30PM CT"
+            "location": "Laramie, WY"
+        },
+        {
+            "team": "West Virginia",
+            "date": "9/7/2019"
+            "time": "11:00AM CT"
+            "location": "Columbia, MO"
+        },
+        {
+            "team": "Southeast Missouri State",
+            "date": "9/14/2019"
+            "time": "6:30PM CT"
+            "location": "Columbia, MO"
+        },
+        {
+            "team": "South Carolina",
+            "date": "9/21/2019"
+            "time": "3:00PM CT"
+            "location": "Columbia, MO"
+        },
+        {
+            "team": "Troy",
+            "date": "10/5/2019"
+            "time": "TBA"
+            "location": "Columbia, MO"
+        },
+        {
+            "team": "Ole Miss",
+            "date": "10/12/2019"
+            "time": "TBA"
+            "location": "Columbia, MO"
+        },
+        {
+            "team": "Vanderbilt",
+            "date": "10/19/2019"
+            "time": "TBA"
+            "location": "Nashville, TN"
+        },
+        {
+            "team": "Kentucky",
+            "date": "10/26/2019"
+            "time": "TBA"
+            "location": "Lexington, KY"
+        },
+        {
+            "team": "Georgia",
+            "date": "11/9/2019"
+            "time": "TBA"
+            "location": "Athens, GA"
+        },
+        {
+            "team": "Florida",
+            "date": "11/16/2019"
+            "time": "TBA"
+            "location": "Columbia, MO"
+        },
+        {
+            "team": "Tennessee",
+            "date": "11/23/2019"
+            "time": "TBA"
+            "location": "Columbia, MO"
+        },
+        {
+            "team": "Arkansas",
+            "date": "11/29/2019"
+            "time": "TBA"
+            "location": "Little Rock, AR"
+        }
+    ]
+}
+

@@ -1,0 +1,61 @@
+{
+    "roster": [
+        {
+            "firstName": "Tyler",
+            "lastName": "Badie",
+            "year": "Sophomore"
+            "number": "1",
+            "position": "Running Back",
+           
+            }
+        },
+        {
+            "firstName": "Jonathan",
+            "lastName": "Nance",
+            "year": "Graduate"
+            "number": "4",
+            "position": "Wide Receiver",
+            }
+        },
+        {
+            "firstName": "Kelly",
+            "lastName": "Bryant",
+            "year": "Graduate"
+            "number": "7",
+            "position": "Quarterback",
+            }
+        },
+        {
+            "firstName": "Jarvis",
+            "lastName": "Ware",
+            "year": "Sophomore"
+            "number": "8",
+            "position": "Defensive Back",
+        },
+        {
+            "firstName": "Tucker",
+            "lastName": "McCann",
+            "year": "Senior"
+            "number": "19",
+            "position": "Kicker",
+        },
+        {
+            "firstName": "Larry",
+            "lastName": "Rountree III",
+            "year": "Junior"
+            "number": "34",
+            "position": "Running Back",
+        },
+        {
+            "firstName": "Albert",
+            "lastName": "Okwuegbunam",
+            "year": "Redshirt Junior"
+            "number": "81",
+            "position": "Tight End",
+        }
+        
+        }
+    ]
+}
+
+

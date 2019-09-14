@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,92 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdvancedCodable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advanced Codable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfa-il-K8Z">
+                                <rect key="frame" x="108" y="56" width="197" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKI-Vx-P1K" userLabel="ScheduleButton">
+                                <rect key="frame" x="32" y="741" width="82" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Schedule"/>
+                                <connections>
+                                    <action selector="scheduleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6QM-4w-0e6"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VgC-OC-UUV" userLabel="InfoTextView">
+                                <rect key="frame" x="1" y="141.5" width="412" height="546.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRX-bc-WYj" userLabel="RosterButton">
+                                <rect key="frame" x="178" y="741" width="57" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Roster"/>
+                                <connections>
+                                    <action selector="rosterButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGs-Xz-Lo8"/>
+                                    <action selector="scheduleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQ1-6H-iCg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mizzou Football" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i1-Sv-Jbk">
+                                <rect key="frame" x="128" y="89.5" width="156" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.763135524611399" green="0.70341821705824414" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZa-Fb-jr5" userLabel="NFLButton">
+                                <rect key="frame" x="278" y="741" width="106" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Alum in NFL"/>
+                                <connections>
+                                    <action selector="nflplayerButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fO6-rm-ddx"/>
+                                    <action selector="scheduleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkO-94-ZeQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kRX-bc-WYj" firstAttribute="top" secondItem="VgC-OC-UUV" secondAttribute="bottom" constant="53" id="0nX-Vp-AN3"/>
+                            <constraint firstItem="kRX-bc-WYj" firstAttribute="leading" secondItem="wKI-Vx-P1K" secondAttribute="trailing" constant="64" id="3jy-j6-hf1"/>
+                            <constraint firstItem="qZa-Fb-jr5" firstAttribute="leading" secondItem="kRX-bc-WYj" secondAttribute="trailing" constant="43" id="3ri-Lb-2Rt"/>
+                            <constraint firstItem="qZa-Fb-jr5" firstAttribute="top" secondItem="VgC-OC-UUV" secondAttribute="bottom" constant="53" id="5Wj-6Y-fsw"/>
+                            <constraint firstItem="6i1-Sv-Jbk" firstAttribute="top" secondItem="bfa-il-K8Z" secondAttribute="bottom" constant="8" id="5eL-Lk-LKW"/>
+                            <constraint firstItem="VgC-OC-UUV" firstAttribute="top" secondItem="6i1-Sv-Jbk" secondAttribute="bottom" constant="24" id="6Ca-h8-pPw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VgC-OC-UUV" secondAttribute="trailing" constant="1" id="AAc-VP-bjL"/>
+                            <constraint firstItem="6i1-Sv-Jbk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="I1i-vN-vgA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wKI-Vx-P1K" secondAttribute="bottom" constant="85" id="MS8-Nl-EKs"/>
+                            <constraint firstItem="VgC-OC-UUV" firstAttribute="top" secondItem="6i1-Sv-Jbk" secondAttribute="bottom" constant="24" id="NIU-gJ-BJE"/>
+                            <constraint firstItem="qZa-Fb-jr5" firstAttribute="leading" secondItem="kRX-bc-WYj" secondAttribute="trailing" constant="43" id="V7W-04-2Tm"/>
+                            <constraint firstItem="wKI-Vx-P1K" firstAttribute="top" secondItem="VgC-OC-UUV" secondAttribute="bottom" constant="53" id="W8t-VD-KYK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6i1-Sv-Jbk" secondAttribute="trailing" constant="130" id="WcM-lc-rkX"/>
+                            <constraint firstItem="wKI-Vx-P1K" firstAttribute="top" secondItem="VgC-OC-UUV" secondAttribute="bottom" constant="53" id="ap0-M8-Tnj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qZa-Fb-jr5" secondAttribute="trailing" constant="30" id="cXL-2E-Gkl"/>
+                            <constraint firstItem="bfa-il-K8Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="fJj-HD-qKc"/>
+                            <constraint firstItem="bfa-il-K8Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="hs7-v2-QTx"/>
+                            <constraint firstItem="kRX-bc-WYj" firstAttribute="leading" secondItem="wKI-Vx-P1K" secondAttribute="trailing" constant="64" id="nkB-rR-dpt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kRX-bc-WYj" secondAttribute="bottom" constant="85" id="ogM-B9-d5N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bfa-il-K8Z" secondAttribute="trailing" constant="109" id="qXf-8z-6y7"/>
+                            <constraint firstItem="VgC-OC-UUV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="r0O-6s-Amu"/>
+                            <constraint firstItem="6i1-Sv-Jbk" firstAttribute="top" secondItem="bfa-il-K8Z" secondAttribute="bottom" constant="8" id="x41-l3-t3r"/>
+                            <constraint firstItem="wKI-Vx-P1K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="zP4-gW-ErT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qZa-Fb-jr5" secondAttribute="bottom" constant="85" id="zmm-dT-bxd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="informTextView" destination="VgC-OC-UUV" id="H7Y-bA-hKu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
     </scenes>
 </document>
